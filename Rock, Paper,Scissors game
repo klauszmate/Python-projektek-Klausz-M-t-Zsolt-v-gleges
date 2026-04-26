@@ -1,0 +1,47 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+import random
+game_images=[rock, paper, scissors]
+
+gamer_choice = int(input("Kérlek adj meg egy számot 0-2.ig!\n"))
+print(game_images[gamer_choice])
+
+computer_choice = random.randint(0,2)
+print(game_images[computer_choice])
+
+if gamer_choice > 2 or gamer_choice < 0:
+    print("Helytelen formátumot adott meg")
+elif gamer_choice > computer_choice:
+    print("Nyertél! Gratulálok!")
+elif computer_choice > gamer_choice:
+    print("A gép nyert! Sajnálom...")
+elif computer_choice == gamer_choice:
+    print("Döntetlen!")
+elif computer_choice == 2 and gamer_choice == 0 :
+    print("Nyertél gratulalálok!!")
+elif computer_choice == 0 and gamer_choice == 2 :
+    print("A gép nyert sajnálom!")

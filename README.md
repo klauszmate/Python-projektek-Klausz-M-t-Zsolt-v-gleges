@@ -1,1 +1,2 @@
 # Python-projektek-Klausz-M-t-Zsolt-v-gleges
+Ez a program egy interaktív Kő-Papír-Olló játékot valósít meg a felhasználó és a számítógép között. A kód ASCII grafikákat használ a választások megjelenítéséhez, a gép döntéseit pedig a random modul segítségével generálja. A fejlesztés során alkalmaztam a listák kezelését, a felhasználói adatbekérést, valamint az összetett if-elif-else feltételrendszert az eredmények kiértékeléséhez
